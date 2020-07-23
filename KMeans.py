@@ -5,7 +5,7 @@ that are close to each other.
 
 The Kmeans algorithm can be trained using the following procedure.
     1. Initialize k different centroids (u1, u2, ..., uk) randomly
-        Kmeans may run into local optimals, to avoid it we can try multiple
+        Kmeans may run into local optimum, to avoid it we can try multiple
         random initilizations and choose the one with smallest converged loss.
     2. Compute distances between each training example to the centoids, and
        assign the closest centroid id to each training example.
@@ -42,13 +42,30 @@ b(i) measures how dissimilar point i is to points in other cluster.
 Use Silhouette or other metrics to grid search for best k value.
 
 
-4. Extension to categorical features
-    4.1 Problem with convert categorical feature to one hot encoded vector? 
-        The main problem is that the categorical features doesn't have a 
-        well defined scale and thus not suitable for calculating Euclidean 
-        distance. We need to find another way to measure how similar or how
-        far two points are from each other.
-    4.2 
+4. Limitations of KMeans
+    4.1 KMeans works best for two dimensional numerical data. For high 
+        dimensions distance interpretation is not obvious. In such case it can
+        be paired with dimension reduction techniques.
+    
+    4.2 KMeans does not work for categorical data. Although categorical data 
+        can be converted using one-hot-encoding, the Euclidean distance is not
+        well defined as each encoded dimension is orthonal and distance is 
+        either zero or one. To solve this, there is an extension of Kmeans known
+        as Kmodes.
+
+        Kmodes use dissimilarities (quantification of the total mismatches
+        between two data points) for distance measure and modes as centroids.
+
+        KPrototypes is the combination of Kmeans and KModes for mixed type data
+
+    4.3 KMeans is sensitive to outliers and noises in the data. 
+        We can do an outlier detection and remove outliers first or use other
+        more robust variations of KMeans, e.g. K-Medians. 
+
+    4.4 KMeans does not behave very well when the clusters have varing sizes, 
+        different densities or non-spherical shapes. In that case, one can use
+        Mixture models such as Gausian Mixture Models (GMM). Kmeans is a 
+        special case of GMM.
 """
 
 import numpy as np
