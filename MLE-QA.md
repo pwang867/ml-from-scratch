@@ -1,5 +1,6 @@
 Q1. Describe what is central limit theorem?
-A1. The central limit theorem states that if we draw a sample from a population
+
+    The central limit theorem states that if we draw a sample from a population
     with large enough sample size, the mean of the sample will be normally 
     distributed. As the size of the sample grows, the mean tends toward the 
     population mean and the variance of the mean will tends towards the 
@@ -9,7 +10,8 @@ A1. The central limit theorem states that if we draw a sample from a population
 
 
 Q2. What is stratified sampling?
-A2. In stratified sampling, the dataset is divided into subgroups based on a 
+
+    In stratified sampling, the dataset is divided into subgroups based on a 
     common factor. Samples are then drawn proportionally from each group. An 
     example where stratified sampling is used is when trying to split a 
     dataset into train part and test part, ideally we want both sets to have
@@ -18,29 +20,34 @@ A2. In stratified sampling, the dataset is divided into subgroups based on a
 
 
 Q3. What is type I and type II error?
-A3. type I error is FP. type I error occurs when the null hypothesis is true but rejected.
+
+    type I error is FP. type I error occurs when the null hypothesis is true but rejected.
     type II error is FN. type II error occurs when the null hypothesis is false but erronerously rejected.
 
 
 Q4. What is the assumption of linear regression?
-A4. 1) There is a linear dependence between target and features.
-    2) The residue (y_hat - y) is independent from each other and normally distributed.
-    3) There is minimum multicollinearity between features.
-    4) The variance around the regression line is the same for all features.
+
+    1) There is a linear dependence between target and features.
+    1) The residue (y_hat - y) is independent from each other and normally distributed.
+    2) There is minimum multicollinearity between features.
+    3) The variance around the regression line is the same for all features.
 
 
 Q5. What is selection bias?
-A5. Selection/sampling bias occurs when the data sample gathered or prepared for modeling doesn't 
+
+    Selection/sampling bias occurs when the data sample gathered or prepared for modeling doesn't 
     represent the true distribution that the model will see in future.
 
 
 Q6. What is an example of non-Gaussian distribution?
-A6. Binomial (p), multiple tosses of a coin with probablity p of being head and 1 - p being tail.
+
+    Binomial (p), multiple tosses of a coin with probablity p of being head and 1 - p being tail.
     Bernoulli (p) single coin tosses
     Poisson (lambda) a rare event will occur in n steps.
 
 Q7. What is the bias-variance trade off?
-A7. Bias and variance are two sources of errors typically occurs in a machine learning model. Bias is an
+
+    Bias and variance are two sources of errors typically occurs in a machine learning model. Bias is an
     error introduced due to over simplification of the model, which can lead to under-fitting.
     Variance is introduced due to too high complexity in the model. It usually performs very well in
     training data but fails to generalize to test data.
@@ -64,7 +71,8 @@ A7. Bias and variance are two sources of errors typically occurs in a machine le
 
 
 Q8. What is confusion matrix?
-Q8. Confusion matrix is a metric for measuring the performance of a classification model. In the binary case, it has four elements including
+
+    Confusion matrix is a metric for measuring the performance of a classification model. In the binary case, it has four elements including
     TP = positive example predicted positive
     FP = negative example predicted positive
     TN = negative example predicted negative
@@ -77,19 +85,22 @@ Q8. Confusion matrix is a metric for measuring the performance of a classificati
 
 
 Q9. What is the goal of A/B testing?
-A9. It is a hypothesis testing for a randomized experiment with two versions (A and B) for the random variable to be tested.
+
+    It is a hypothesis testing for a randomized experiment with two versions (A and B) for the random variable to be tested.
     The goal of A/B test is to identify the infuence of any changes to a product. An example of this could be
     to identify influence of adding a like button to the user engagement in a webpage.
 
 
 Q10. What is p-value?
-A10. When performing a hypothesis test in statistic, a p-value can help you determine the strength of the result.
+
+     When performing a hypothesis test in statistic, a p-value can help you determine the strength of the result.
      p-value is the minimum siginificance level that the null hypothesis can be rejected. The lower the p-value, 
      the more likely you can reject the null hypothesis.
 
 
 Q11. What are the difference between underfitting and overfitting?
-A11. Underfitting is a phenomeno in which the statistical model or machine learning algorithm fails to capture the
+
+     Underfitting is a phenomeno in which the statistical model or machine learning algorithm fails to capture the
      underlying trend/pattern of the data. It mostly occurs when the model is overly simplified, for example when 
      fitting a linear model to non-linear data.
 
@@ -99,62 +110,65 @@ A11. Underfitting is a phenomeno in which the statistical model or machine learn
 
 
 Q12. How to combat underfitting and overfitting?
-A12. To combat underfitting:
-        1) try add more features to the model
-        2) try other models with larger capacity
-        3) increase training iterations
 
-     To combat overfitting:
-        1) add more data
-        2) try simpler models (reduce model capacity)
-        3) regularization
-            3.1) l2 or l1 or elasticnet regularization, l2 weight decay, l1 sparsity 
-            3.2) early stopping (deep learning)
-            3.3) dropout (deep learning)
-        4) use k-fold cross validation for model parameter tuning/selection
-        5) ensemble (bagging or boosting)
-        6) add noise to data
-        7) feature selection
+    To combat underfitting:
+    1) try add more features to the model
+    2) try other models with larger capacity
+    3) increase training iterations
+
+    To combat overfitting:
+    1) add more data
+    2) try simpler models (reduce model capacity)
+    3) regularization
+        3.1) l2 or l1 or elasticnet regularization, l2 weight decay, l1 sparsity 
+        3.2) early stopping (deep learning)
+        3.3) dropout (deep learning)
+    4) use k-fold cross validation for model parameter tuning/selection
+    5) ensemble (bagging or boosting)
+    6) add noise to data
+    7) feature selection
 
 Q13. What is the Law of Large Numbers?
-A13. It is a theorem that describes the result of performing the same experiment a large number of times. According to the law,
-     the average of the results obtained from a large number of trials should be close to the expected value and will tend to
-     become closer to the expected value as more trials are performed.
+
+    It is a theorem that describes the result of performing the same experiment a large number of times. According to the law,
+    the average of the results obtained from a large number of trials should be close to the expected value and will tend to
+    become closer to the expected value as more trials are performed.
 
 
 Q14. What is TF/IDF vectorization?
-A14. TF/IDF is short for term frequency inverted document frequency. It is a numeric statistic that is intended 
-     to reflect how important a word is to a document in a collection of document or corpus. It is often used as
-     a weighted factor for information retrievel and text mining.
 
-     TF = # of times a word occured in a document / total # of words in the document
-     IDF = log(# documents contains the word / total # of documents in corpus)
+    TF/IDF is short for term frequency inverted document frequency. It is a numeric statistic that is intended 
+    to reflect how important a word is to a document in a collection of document or corpus. It is often used as
+    a weighted factor for information retrievel and text mining.
+
+    TF = # of times a word occured in a document / total # of words in the document
+    IDF = log(# documents contains the word / total # of documents in corpus)
+    
+    The TF indicates the relative importance of the word in a given document while IDF help to adjust for the fact 
+    that some words are more frequent in general.
+
+
+Q15. Why we generally use softmax (or sigmoid) non-linearity function as final output in NN? Why RELU in inner layers?
      
-     The TF indicates the relative importance of the word in a given document while IDF help to adjust for the fact 
-     that some words are more frequent in general.
+    That's because in the final layer, we typically want to output a probability distribution. The softmax
+    or sigmoid were designed to scale any real number in the region between [0, 1], which satisfies the 
+    probability requirement.
 
+    For inner layers, the issue with softmax or sigmoid is that they quickly saturates when moved away from 
+    zero which means the gradient of them will be very small except near zero, in a NN of many layers this 
+    leads to a phenomena called vanishing gradient, which will cause the learning algorithm to progress very
+    slowly and eventually stops. 
 
-Q15. Why we generally use softmax (or sigmoid) non-linearity function as final output in NN?
-     Why RELU in inner layers?
-     
-A15. That's because in the final layer, we typically want to output a probability distribution. The softmax
-     or sigmoid were designed to scale any real number in the region between [0, 1], which satisfies the 
-     probability requirement.
-
-     For inner layers, the issue with softmax or sigmoid is that they quickly saturates when moved away from 
-     zero which means the gradient of them will be very small except near zero, in a NN of many layers this 
-     leads to a phenomena called vanishing gradient, which will cause the learning algorithm to progress very
-     slowly and eventually stops. 
-
-     The Relu activation can solve the vanishing gradient problem because in most regions it has a constant
-     gradient of 1, g(x) = max(0, x).
+    The Relu activation can solve the vanishing gradient problem because in most regions it has a constant
+    gradient of 1, g(x) = max(0, x).
 
 
 Q16. Train vs validation vs test sets?
-A16. Training
+
+    Training
         1) to fit the parameters of a model, i.e. weights in linear regression
-     
-     Validation
+        
+        Validation
         1) part of the training set
         2) used for model hyperparameter tuning, i.e. regularization strength in linear regression
         3) to avoid overfitting (by plot train & valid error vs different model hyperparameters)
@@ -165,51 +179,56 @@ A16. Training
 
 
 Q17. Cross validation
-A17. Cross validation is a sampling technique used to estimate the generalization power of a model on
-     unseen data. A typical scheme of doing cross validation is called k-fold cross validation, in which 
-     the data is randomly divided into k subsets called k folds. Then, one of folds is hold out and the
-     model is trained on the rest k - 1 folds. This process is repeated k times by rotating the hold out 
-     fold. 
 
-     The cross validation provides several benefits:
-        1) In case of limited training data, we don't want to have to a hold out test set because it will 
-           further reduce the training data.
-        2) It allows us to estimate the generalization error on data not used for training.
-        3) It can be used for model selection / hyperparameter tuning.
-        4) It can help reduce overfitting issues by comparing the training error and validation error in
-           different model settings and choose the best one that gives minimum gap in train and validation
-           error.
+    Cross validation is a sampling technique used to estimate the generalization power of a model on
+    unseen data. A typical scheme of doing cross validation is called k-fold cross validation, in which 
+    the data is randomly divided into k subsets called k folds. Then, one of folds is hold out and the
+    model is trained on the rest k - 1 folds. This process is repeated k times by rotating the hold out 
+    fold. 
+
+    The cross validation provides several benefits:
+    1) In case of limited training data, we don't want to have to a hold out test set because it will 
+        further reduce the training data.
+    2) It allows us to estimate the generalization error on data not used for training.
+    3) It can be used for model selection / hyperparameter tuning.
+    4) It can help reduce overfitting issues by comparing the training error and validation error in
+        different model settings and choose the best one that gives minimum gap in train and validation
+        error.
     Other variants:
         1) stratified k fold (data is sampled proportionally according to a group factor).
         2) leave one out, on extreme low data volume setting.
 
 
 Q18. What is machine learning?
-A18. Machine learning is the study of computer algorithms that improve automatically through
-     experience. It is seen as a subset of artificial intelligence. Machine learning explores
-     the study and construction of algorithms that can learn from and make predictions on data.
+
+    Machine learning is the study of computer algorithms that improve automatically through
+    experience. It is seen as a subset of artificial intelligence. Machine learning explores
+    the study and construction of algorithms that can learn from and make predictions on data.
 
 
 Q19. What is supervised learning?
-A19. In supervised learning, each data point is given a label (target). It is called supervised
-     in the sense that the label is served as a supervisor for the algorithm to learn.
-     Linear regression, logistic regression, decision tree, naive bayes, knn, svm, nn, etc.
+
+    In supervised learning, each data point is given a label (target). It is called supervised
+    in the sense that the label is served as a supervisor for the algorithm to learn.
+    Linear regression, logistic regression, decision tree, naive bayes, knn, svm, nn, etc.
 
 Q20. What is unsupervised learning?
-A20. Unsupervised learning is a type of machine learning algorith used to draw inference from 
-     input data without any labels.
 
-     clustering: kmeans, gausian mixture models; anaomly detection; representation learning
+    Unsupervised learning is a type of machine learning algorith used to draw inference from 
+    input data without any labels.
+
+    clustering: kmeans, gausian mixture models; anaomly detection; representation learning
 
 
 Q21. What is "Naive" in Naive Bayes?
-A21. Naive Bayes methods are a set of supervised learning algorithms based on applying Bayes'
-     theorem with the "naive" assumption of conditional independence between any pair of features
-     given the class variable, that is P(x_i|y, x_1, x_2, ..., x_n) = P(x_i|y)
 
-     Bayes' theorem:
-        P(y|x_1,x_2,...x_n) = P(y)*P(x_1,x_2,...,x_n|y) / P(x_1,x_2,...,x_n)
-                            = P(y)*P(x_1|y)*P(x_2|y)*...*P(x_n|y) / P(x_1,x_2,...,x_n)
+    Naive Bayes methods are a set of supervised learning algorithms based on applying Bayes'
+    theorem with the "naive" assumption of conditional independence between any pair of features
+    given the class variable, that is P(x_i|y, x_1, x_2, ..., x_n) = P(x_i|y)
+
+    Bayes' theorem:
+    P(y|x_1,x_2,...x_n) = P(y)*P(x_1,x_2,...,x_n|y) / P(x_1,x_2,...,x_n)
+                        = P(y)*P(x_1|y)*P(x_2|y)*...*P(x_n|y) / P(x_1,x_2,...,x_n)
 
     We can use Maximum a Posteriori (MAP) estimation to estimate P(y) and P(y|x_i) from the observed
     data. 
@@ -218,88 +237,95 @@ A21. Naive Bayes methods are a set of supervised learning algorithms based on ap
 
 
 Q22. What is PCA?
-A22. Principal component analysis is a statistical method used in machine learning. It is used for
-     projecting higher dimensional data into a lower dimensional space by maximize the variance in
-     the projected dimensions.
 
-     There are too ways to do PCA: eigen decomposition or singular value decomposition
+    Principal component analysis is a statistical method used in machine learning. It is used for
+    projecting higher dimensional data into a lower dimensional space by maximize the variance in
+    the projected dimensions.
 
-     1) eigen decomposition: A = X^TX = UMU^T => B = AU
-     2) SVD: A = UDV => B = AV
+    There are too ways to do PCA: eigen decomposition or singular value decomposition
+
+    1) eigen decomposition: A = X^TX = UMU^T => B = AU
+    2) SVD: A = UDV => B = AV
 
 
 Q23. SVM
-     Assume we have a training set with p features. We can view the data as points in the 
-     p dimensional space, so we want to find a p - 1 dimensional hyperplane that seperate 
-     data points of one class from the other. There may exists many choice for this hyperplane.
-     One reasonable choice as the best hyperplane is the one that has largest separation or
-     margin between the two classes. This hyperplane is called maximum margin hyperplane and 
-     the corresponding classifier is maximimum margin classifer (SVM).
-     
-        1) the hyperplane is defined as w*x - b = 0. 
-        2) decison boundary is the sign(w*x-b)
-        3) margin: 2 // ||w||
-        4) support vectors are the points lie on |w*x-b| = 1
-        5) hinge loss max(0, 1 - y_i*(wx-b))
-           the hinge loss is zero if the data point lies in the correct side of the margin,
-           otherwise it increasely linearly with the distance to the margin
-        6) kernels
-           Linear kernel
-           Gausian kernel (RBF), increase gamma increases variance
-           Polynomial kernel
-           Sigmoid kernel
 
-     Application: text categorization, image classificatin, hand written digit recoginition
+    Assume we have a training set with p features. We can view the data as points in the 
+    p dimensional space, so we want to find a p - 1 dimensional hyperplane that seperate 
+    data points of one class from the other. There may exists many choice for this hyperplane.
+    One reasonable choice as the best hyperplane is the one that has largest separation or
+    margin between the two classes. This hyperplane is called maximum margin hyperplane and 
+    the corresponding classifier is maximimum margin classifer (SVM).
+    
+    1) the hyperplane is defined as w*x - b = 0. 
+    2) decison boundary is the sign(w*x-b)
+    3) margin: 2 // ||w||
+    4) support vectors are the points lie on |w*x-b| = 1
+    5) hinge loss max(0, 1 - y_i*(wx-b))
+        the hinge loss is zero if the data point lies in the correct side of the margin,
+        otherwise it increasely linearly with the distance to the margin
+    6) kernels
+        Linear kernel
+        Gausian kernel (RBF), increase gamma increases variance
+        Polynomial kernel
+        Sigmoid kernel
+
+    Application: text categorization, image classificatin, hand written digit recoginition
 
 Q24. Ensemble algorithms
-     Boosting: sequentially improve a model from its previous versions
-        1) Adaboost: improve from previous weak learner by assign more weight to incorrect predicted samples
-            pros: 
-                1.1) robust against in low noise data 
-                1.2) few hyperparameter, easy to tune
-            cons: slow
-        2) Xgboost: gradient tree boosting
-            pros: 
-                2.1) good performance if tuned correctly
-                2.2) very fast due to parallelism
-                2.3) regualarization
-            cons:
-                2.4) multiple hyper parameters, hard to tune
-                2.5) may overfit
-     Bagging: is non sequential, a collections of weak models are trained using different boostrap samples with replacement from the data
-        3) Random Forest: a collection of independent decision trees
-            pros:
-                3.1) robust against noise, outliers, missing data
-                3.2) deal with mixing data types, categorical needs not to be one-hot-encode
-                3.3) can do feature selection via feature importance
-                3.4) explainability
-                3.5) small variance by using large number of trees
-            cons:
-                3.6) many parameters to tune
-                3.7) should be avoided in time series data or look ahead bias should be avoided
-                     or the order of data continuity should be ensured.
+
+    Boosting: sequentially improve a model from its previous versions
+    1) Adaboost: improve from previous weak learner by assign more weight to incorrect predicted samples
+        pros: 
+            1.1) robust against in low noise data 
+            1.2) few hyperparameter, easy to tune
+        cons: slow
+    2) Xgboost: gradient tree boosting
+        pros: 
+            2.1) good performance if tuned correctly
+            2.2) very fast due to parallelism
+            2.3) regualarization
+        cons:
+            2.4) multiple hyper parameters, hard to tune
+            2.5) may overfit
+    Bagging: is non sequential, a collections of weak models are trained using different boostrap samples with replacement from the data
+    3) Random Forest: a collection of independent decision trees
+        pros:
+            3.1) robust against noise, outliers, missing data
+            3.2) deal with mixing data types, categorical needs not to be one-hot-encode
+            3.3) can do feature selection via feature importance
+            3.4) explainability
+            3.5) small variance by using large number of trees
+        cons:
+            3.6) many parameters to tune
+            3.7) should be avoided in time series data or look ahead bias should be avoided
+                    or the order of data continuity should be ensured.
 
 
 Q25. How to split data in decison tree?
-     metrics:
-        gini index: gini = 1 - sum(p_i^2), p_i the proportion of ith class, split on largest decrease in gini index
-        cross entropy: -sum(p_ilog(p_i)), split on largest decrease of cross entropy
+
+    metrics:
+    gini index: gini = 1 - sum(p_i^2), p_i the proportion of ith class, split on largest decrease in gini index
+    cross entropy: -sum(p_ilog(p_i)), split on largest decrease of cross entropy
 
 
 Q26. What is pruning in Decision Tree?
-     Pruning is the process to reduce the size of the decision tree with the purpose of improving model
-     generalization power or reduce overfitting. E.g., tree depth, minimum size of leaf nodes.
+
+    Pruning is the process to reduce the size of the decision tree with the purpose of improving model
+    generalization power or reduce overfitting. E.g., tree depth, minimum size of leaf nodes.
 
 
 Q27. Outiliers?
-     1) replace with 1% or 99% or quantiles
-     2) replace it with mean or median 
-     3) normalize the data
-     4) log transformation (many outliers)
-     5) drop the data point
+
+    1) replace with 1% or 99% or quantiles
+    2) replace it with mean or median 
+    3) normalize the data
+    4) log transformation (many outliers)
+    5) drop the data point
 
 
 Q28. Missing value?
+
     1) analyze the reason of missing, data generation process, any patterns; sometimes missing values provides
        provides valuable information. e.g. in network operations, we want to understand network system behavoriors
        from device data; sometimes the missing data is due to a network failure, these missing value actually
@@ -310,11 +336,13 @@ Q28. Missing value?
 
 
 Q29. How are weights initialized in NN?
+
     1) random: weights are drawn randomly from a predefine probability distribution, e.g. normal or uniform
     2) Xavier initialization: u(6/sqrt(m), 6/sqrt(n))
 
 
 Q30. What are hyperparameters in DL?
+
     1) # of hidden layers
     2) # of hidden units in each layer
     3) learning rate
@@ -323,6 +351,7 @@ Q30. What are hyperparameters in DL?
 
 
 Q31. What is cost function?
+
     Cost function is also called loss function or error function. Cost function is a measure
     of how well perfoms when predicting on a given dataset. Most common loss is mean sum of
     squared errors (MSE).
@@ -330,12 +359,14 @@ Q31. What is cost function?
 
 
 Q32. Epoch, Batch, iteration?
+
     1) Epoch: # of times the model will run through the entire dataset
     2) Batch: data is too large to feed to network at once, divide into smaller batches
     3) Iteration: data_size / batch_size
 
 
 Q33. Layers in CNN?
+
     1) Convolutional Layer - performs a convolution operation, creating smaller
        Windows of original image at different location.
        convolution act as an kernel operation, which slides over the input image and
@@ -359,12 +390,14 @@ Q33. Layers in CNN?
 
 
 Q34. What is pooling in CNN?
+
     Pooling is a filter process used to reduce the spatial dimensions in CNN. It performs
     down sampling on the feature maps created from its previous layer by sliding a filter
     matrix over the input feature map.
 
 
 Q35. What is a RNN?
+
     RNNs are a family of neural networks for processing sequential data. The recurrent reflects
     the fact that it can be applied repeatedly to the next value in a sequence to produce an output.
 
@@ -388,6 +421,7 @@ Q35. What is a RNN?
 
 
 Q36. Encoder / Decoder or seq-to-seq RNNs?
+
     A sequence to sequence model is a model that takes a sequence of items (words, chars, features of images) as input and outputs another sequence of items. 
     
     In machine translation, input sequence would be the words in one language and output is the corresponding sequence of words in the target language.
@@ -396,6 +430,7 @@ Q36. Encoder / Decoder or seq-to-seq RNNs?
     
 
 Q37. Explain LSTM network?
+
     LSTM is short for long short term memory networks. It is a special kind of RNN which is capable
     of learning long term dependencies in seq data.
 
@@ -421,6 +456,7 @@ Q37. Explain LSTM network?
 
 
 Q38. What is MLP?
+
     A MLP has the same struture as single layer perceptron but with multiple hidden layers.
 
     A single layer perceptron can only classify linearly separable data but MLP can complicate non linear separable data. 
@@ -429,6 +465,7 @@ Q38. What is MLP?
 
 
 Q39. Explain Gradient Descent?
+
     Firstly, gradient is a mathematical funtion, which gives the slope&direction for which the original function moves fastest. The gradient only vanishes at stationary points of the function.
 
     Gradient descent is a first order iterative optimization algorithm for
@@ -437,6 +474,7 @@ Q39. Explain Gradient Descent?
         2) update the parameters in the opposite direction of the slope increase from current parameter values by the computed amount.
 
 Q40. What is exploding gradient?
+
     Exploding gradient is a problem found in training deep neural networks using gradient based algorithms and back propagation. As the depth of neural network increases, the gradient growths exponentially with matrix multiplication if the value in these matrix is larger than one. A counter problem is the gradient vanishing problem if multiply many numbers less then one, the gradient shrinks to zero exponentially and eventually completely vashises.
 
     How to detect gradient exploding?
@@ -460,6 +498,7 @@ Q40. What is exploding gradient?
 
 
 Q41. What is vanishing gradient?
+
     Vanishing gradient is a problem when training a deep neural network using gradient based learning algorithms, which will cause the model weights updates very little or no update at all, effectively stop the learning process. It leads to slow training, poor performance and low accuracy.
 
     How to fix it?
@@ -470,6 +509,7 @@ Q41. What is vanishing gradient?
 
 
 Q42. Explain back propagation.
+
     Back propagation is a algorithm used for training neural networks. It works by sending the error made in previous iteration from the output layer backwards to update the weights of the model layer by layer.
 
     Work flow:
@@ -479,28 +519,34 @@ Q42. Explain back propagation.
    
 
 Q43. What are the variants of gradient descent?
+
     1) Stochastic gradient descent: take only one example at each step for calculating the gradient and updating weights. Loss will fluctuate from example to example will descrease with multiple examples. 
     2) Batch gradient descent: all training data are used in a single step for calculating gradient and updating weights. Take mean gradient, less fluctuations.
     3) Mini-batch gradient descent: It's the most popular choice. Instead of only one example, each step will use a mini-batch of samples to train and updating weights.
 
 
 Q44. What is the role of Activation Function?
+
     The activation function is used to introduce non-linearity into the neural network helping it to learn more complex functions. Without activation function would only be able to learn linear combinations of input data.
 
 
 Q45. What is an auto-encoder?
+
     An autoencoder is a type of neural network used to learn an efficient data coding in an unsupervised manner. The aim of autoencoder is to learn a representation for a set of data, typically for dimensionality reduciton, by training the network to ignore noise signals. Along with the reduction side, a reconstruction side is learnt, where the autoencoder tries to regenerate from the reduced encoding a representation as close as possible to its original input. 
 
 
 Q46. What is Dropout?
+
     Dropout is a technique used during the training a deep neural networks which randomly drop out some nodes (input or hidden) to prevent overfitting. (20%)
 
 
 Q47. What is BatchNormalization?
+
     Batch normalization is the technique to improve model performance and stability of neural networks by normalizing the input in every layer of the network, so that they have mean output activation of zero and standard deviation of one.
 
 
 Q48. Feature selection methods?
+
     1) Filter methods
        1.1) Linear discrimination analysis
        1.2) ANOVA
@@ -517,6 +563,7 @@ Q48. Feature selection methods?
 
 
 Q49. How should you maintain a deployed model?
+
     1) Monitor: constant monitoring the performance of model. When there are changes in the system or data, monitoring helps quickly understand the implications of those changes so we can adjust accordingly.
     2) Evaluate: evaluation is needed for new data and compare to offline benchmark to decide if re-training is required.
     3) Compare: the new models are compared to each other to determine which model performs best.
@@ -524,16 +571,19 @@ Q49. How should you maintain a deployed model?
 
 
 Q50. What is Generative Adversarial Networks?
+
     Generative Adversarial Networks is an approach to generative modeling using deep learning methods, such as CNNs. In GANs, two neural networks, called Generator and Discriminator contest with each other in a game. Given a set of training data, the generator learns to generate new data points with the same statistics as the training data while the discrimator will learn to discrinate whether a given data point is generated or real data.
 
 
 Q51. What are the optimization algorithms used in back propagation?
+
     1) Gradient descent
     2) RMSProp
     3) Adam
 
 
 Q52. BERT
+
     BERT is short for Bidirectional Encoder Representation from Transformers
 
     pretraining (unsupervised): to understand language
@@ -543,6 +593,7 @@ Q52. BERT
         Add addtional output layers for specific task, these layers are trained from scratch but the BERT parameters are only fine tuned.
 
 Q53. Transformer
+
     Transformers are a model architechture for seq to seq modeling that is solely based on attension mechanism and no RNNs are used.
     
     The encoding part is a stack of encoders, each consists of a self-attention sublayer and a feed forward network.
@@ -572,6 +623,7 @@ Q53. Transformer
         output probability: next word
 
 Q54. Attention
+
     Attension is a technique used in seq to seq modeling which allows the decoder to focus on different parts of the input seq with respect to the context of the target sequence. In the classic encoder decoder architechture, the encoder learns a fixed length context vector (the last hidden state) and send it to the decoder. The problem with this approach is that the fixed length vector may not capture the necessary infomration, especially in cases of very long sequences. The attension mechanism solves this issue by jointly learn an alignment vector along with the encoder and decoder RNNs, which allows the decoder to focus on different parts of the input seq at each time step.
 
     The attension model differs from a classic seq-to-seq model in two ways:
@@ -580,10 +632,12 @@ Q54. Attention
 
 
 Q55. EM?
+
     EM is short for expection maximization algorithm. It is an iterative approach mostly commonly used for modeling latent variables in maximum likelihood estimation.
 
 
 Q56. Design Email Auto Compose?
+
     Requirements
         1) Latency: to serve in real time applications, as the user type it should provide suggestions within 100ms so it will not affect user experience.
         2) Scale: one billion users, the model should have enough capacity to handle subtle context.
@@ -608,6 +662,7 @@ Q56. Design Email Auto Compose?
 
 
 Q57. Explain word2vec?
+
     Word2vec is framework for learning distributed work vectors/representations. To explain word2vec, maybe we should start with one hot vectors. So, computers doesn't understand words instead it only understand numeric objects like numbers, vectors and matrices. So we need some way to encode words into numbers. One way to do it is to use one hot encoding for words, which is a vector that has dimensions equal to size of the vocabulary. Each word will have a vector with all zeros except only one dimension being one corresponding to the index of that word. The problem of this approach is that all the vectors are orthogonal to each other, making it very hard to express any semantic similarities betweens, e.g. every word has the same distance or similarities if we use one hot vectors. Another issue is that the dimension can easily go up to hundreds of thousands.
 
     When we say word2vec is a distributed representation of words, the distributed really means that the signal or the semantic meaning of words are distributed across the dimensions instead of localised into a single dimension. The way how word2vec was constructed is based on a simple idea that similar words will have similar surrounding words.
@@ -627,6 +682,7 @@ Q57. Explain word2vec?
             the probability of turn right at any given interval node is sigmoid(v dot u); turn right is 1 - sigmoid(v dot u) = sigmoid(-v dot u)
 
 Q58 Recommender System?
+
     Recommender system is a subclass of information filtering system that seeks to predict the "rating" or "preference" a user would give to an item. "Ratings" could be "Buy", "Like", "Watch", or "Dislike".
     
     1) Collaborative Filtering
